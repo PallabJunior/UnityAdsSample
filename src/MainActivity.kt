@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         /////////////////////////// Unity Ads initialization
         val adListener = UnityVideoAdsListener()
         UnityAds.addListener(adListener)
-        UnityAds.initialize(applicationContext, unityGameID, testMode)
+        UnityAds.initialize(applicationContext, unityGameID, testMode)  // this method is not deprecated but not working anyway
+        //UnityAds.initialize(this, unityGameID, testMode)      //// I have tried this too
         ////////////////////////// Unity Ads initialization
 
 
